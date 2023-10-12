@@ -89,6 +89,14 @@ margin-right:5%;
   border-radius: 5%;
 color: aliceblue;
 }
+.imaaaage{
+  position: relative;
+  height:100%;
+  width:100%;
+  left:0%;
+  top:0%;
+  display: block;
+}
 .proj{
   position: relative;
   float: left;
@@ -100,6 +108,7 @@ color: aliceblue;
   border: 3px rgb(15, 228, 40) solid;
   border-radius: 5%;
 color: aliceblue;
+text-align: center;
 }
 #ProjetosP{
   display: none;
