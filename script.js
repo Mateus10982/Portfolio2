@@ -1,5 +1,6 @@
 //https://portfolio-xi-lovat-34.vercel.app/
 const repositoriosS=[];
+const imaaaage=["imagemm1","imagemm2","imagemm3","imagemm4"];
 const githubUsername = 'Mateus10982';
 const gitUrl = `https://api.github.com/users/${githubUsername}/repos`;
 
@@ -58,7 +59,7 @@ switch(tipobutton){
 }
 function reformular(repositoriosS){
     for(let j=0 ;j < repositoriosS.length; ++j){
-ProjetosP.innerHTML+=`<div class="proj">${repositoriosS[j].Nome} ; ${repositoriosS[j].Descrição} ;<br> <a href="${repositoriosS[j].Link}">Link para o site<a/></div>`;
+ProjetosP.innerHTML+=`<div class="proj"><img class="imaaaage" href="${imaaaage[j]}">${repositoriosS[j].Nome} ; ${repositoriosS[j].Descrição} ;<br> <a href="${repositoriosS[j].Link}">Link para o site<a/></div>`;
 }}
 function repo(githubUsername,gitUrl){
     fetch(gitUrl).then(resposta => resposta.json()).then(repositories => { console.log(repositories); repositories.forEach(repository => {
