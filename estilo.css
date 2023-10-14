@@ -10,6 +10,14 @@
   transform:rotate(0.6deg);
   transform-origin:left;
 }
+#barraDeOpcoes2{
+  position: absolute;
+  height:3%; 
+  width:99.7%;
+  left:0%;
+  top:85%;
+  background:transparent;
+}
 .barraDeOpcoes{
   position: absolute;
   height:5%; 
