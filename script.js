@@ -1,4 +1,3 @@
-//https://portfolio-xi-lovat-34.vercel.app/
 const repositoriosS=[];
 const imaaaage=["imagemm1","imagemm2","imagemm3","imagemm4"];
 const githubUsername = 'Mateus10982';
@@ -30,7 +29,7 @@ function oculltar(){
 function delay(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
   }
-barradeop.addEventListener("mouseleave",  async function(){
+barradeop.addEventListener("mouseover",  async function(){
  await delay(1500);
     Experiencia.style.display="none";
     Habilidades.style.display="none";
