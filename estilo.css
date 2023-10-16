@@ -10,6 +10,13 @@
   transform:rotate(0.6deg);
   transform-origin:left;
 }
+i{
+  position: fixed;
+  height:2%;
+  color: aliceblue;
+  bottom: 0%;
+  left:20%;
+}
 #barraDeOpcoes2{
   position: absolute;
   height:3%; 
@@ -54,18 +61,36 @@ margin-right:5%;
   color:aliceblue;
   border: 3px rgb(3, 54, 9) double;
   border-radius: 5%;
-display: none;
-background-color: rgba(0, 0, 0, 0.901);
+  display: none;
+  background-color: rgba(0, 0, 0, 0.901);
+}
+#seta{
+position: absolute;
+width:24%;
+height:100% ;
+left:3px;
+top:0px ;
+transform:rotate(-90deg);
+transform-origin:top bottom;}
+#topo{
+  position:fixed;
+  width:5%;
+  height:3%;
+  right:4% ;
+  bottom:5%;
+  color:rgba(28, 138, 43, 0.452) ;
+  background-color: rgba(20, 20, 20, 0.466);
+  border: 1px rgba(28, 138, 43, 0.452) outset;
 }
 a:visited{
-color:rgb(3, 3, 219);
+color:rgb(28, 138, 42);
 }
-a:-webkit-any-link {     color: rgb(2, 2, 190);}
+a:-webkit-any-link {     color: rgb(28, 138, 42)}
 a:link{
-  color:rgb(2, 2, 182);
+  color:rgb(28, 138, 42);
   }
   a{
-    color: rgb(2, 2, 190);
+    color: rgb(28, 138, 42);
     }
 .p11{
   position: absolute;
