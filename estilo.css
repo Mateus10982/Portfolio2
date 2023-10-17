@@ -91,7 +91,7 @@ transform-origin:top bottom;}
   height:3%;
   right:4% ;
   bottom:5%;
-  color:rgba(28, 138, 43, 0.452) ;
+  color:rgb(28, 138, 43) ;
   background-color: rgba(20, 20, 20, 0.466);
   border: 1px rgba(28, 138, 43, 0.452) outset;
 }
@@ -139,6 +139,9 @@ a:link{
   font-size:19px;
   flex: 1; 
   margin: 0;
+}
+.butoesPrincipais:hover{
+  background-image:  linear-gradient(137deg, rgba(37,68,22,0.896796218487395) 0%,rgb(58, 123, 25) 35%, rgba(37,68,22,0.896796218487395) 100%);
 }
 .p131{
   position: relative;
