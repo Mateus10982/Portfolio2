@@ -19,10 +19,10 @@ i{
 }
 #barraDeOpcoes2{
   position: absolute;
-  height:3%; 
+  height:80%; 
   width:99.7%;
   left:0%;
-  top:85%;
+  top:0%;
   background:transparent;
 }
 .barraDeOpcoes{
@@ -34,22 +34,35 @@ i{
   background-image: linear-gradient(126deg, rgba(0, 0, 0, 0.678) 13%, rgba(10, 10, 12, 0.747) 57%, rgba(48, 48, 48, 0.726) 60%, rgba(0, 0, 0, 0.753) 69%);
   border: 3px rgb(3, 54, 9) double;
   border-radius: 5%;
+  display: flex; 
+  justify-content: space-between; 
 }
 .texttttt{
   position: relative;
-  top:43% ; 
-margin-left:13%;
-margin-right:5%;
-  font-size:180%;
+  left: 0%;
+  font-size:170%;
+  background-color: transparent;
+  cursor: pointer;
   font-family:"OCR A Std", monospace;
+}
+li{
+  margin-bottom: 5%;
+}
+ul{
+  display: inline;
+  list-style-type: none;
 }
 #menuFlutuando{
   position: absolute;
-  width:40%;
-  height:23%; 
-  left:30%;
+  width:20%;
+  height:15%; 
+  left:37%;
   top:60%;
+  text-align: center;
+  align-items: center;
+justify-content: center;
   color:aliceblue;
+  background-color: transparent;
   /*animation: menuu 3s linear  infinite;*/
 }
 #textMenuFlutuando{
@@ -61,8 +74,8 @@ margin-right:5%;
   color:aliceblue;
   border: 3px rgb(3, 54, 9) double;
   border-radius: 5%;
-  display: none;
-  background-color: rgba(0, 0, 0, 0.901);
+display: none;
+background-color: rgba(0, 0, 0, 0.901);
 }
 #seta{
 position: absolute;
@@ -96,6 +109,7 @@ a:link{
   position: absolute;
   left:3%;
   top:20%;
+  font-size: 19px;
   text-align: justify;
 }
 .p112{
@@ -110,16 +124,29 @@ a:link{
 /*@keyframes menuu {  0%{    top:60%;  } 50%{    top:59%;  }  80%{    top:64%;  }  80%{    top:6%3;  } 100%{    top:60%;  } }*/
 .butoesPrincipais{
   position: relative;
-  height:80%; 
-  width:20%;
-  top:10% ; 
-margin-left:7%;
-margin-right:5%;
- background-image: linear-gradient(120deg, rgba(0, 0, 0, 0.808) 13%, rgba(10, 10, 12, 0.856) 35%, rgba(48, 48, 48, 0.822) 60%, rgba(0, 0, 0, 0.856) 77%);
-  border: 3px rgb(3, 54, 9) solid;
+  height:100%; 
+    left: 0px;
+    top:0px ; 
+    text-align: center;
+    display:block;
+    align-items: center;
+    justify-content: center;
+ background-image:  linear-gradient(137deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.9752275910364145) 35%, rgba(37,68,22,0.896796218487395) 100%);
+  border: 1px rgb(1, 19, 5) solid;
   border-radius: 5%;
   color: aliceblue;
+  cursor: pointer;
   font-size:19px;
+  flex: 1; 
+  margin: 0;
+}
+.p131{
+  position: relative;
+  left:15%;
+  top:15%;
+  margin: 0;
+  font-size: 19px;
+  text-align: justify;
 }
 .blocoPublico{
   position: absolute;
