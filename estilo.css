@@ -77,6 +77,11 @@ justify-content: center;
 display: none;
 background-color: rgba(0, 0, 0, 0.901);
 }
+.imicon{
+  position: relative;
+  width: 2%;
+  height: 2%;
+}
 #seta{
 position: absolute;
 width:24%;
@@ -91,6 +96,7 @@ transform-origin:top bottom;}
   height:3%;
   right:4% ;
   bottom:5%;
+  cursor: pointer;
   color:rgb(28, 138, 43) ;
   background-color: rgba(20, 20, 20, 0.466);
   border: 1px rgba(28, 138, 43, 0.452) outset;
