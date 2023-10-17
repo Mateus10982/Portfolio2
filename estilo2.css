@@ -75,6 +75,11 @@
   display: none;
   background-color: rgba(0, 0, 0, 0.901);
   }
+  .imicon{
+    position: relative;
+    width: 8%;
+    height: 6.3%;
+  }
   #seta{
   position: absolute;
   width:24%;
@@ -89,6 +94,7 @@
     height:4%;
     right:2% ;
     bottom:2%;
+    cursor: pointer;
     color:rgb(28, 138, 43) ;
     background-color: rgba(20, 20, 20, 0.466);
     border: 1px rgba(28, 138, 43, 0.452) outset;
