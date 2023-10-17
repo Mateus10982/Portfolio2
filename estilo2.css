@@ -4,7 +4,7 @@
     height:40%; 
     width:100%;
     left:0%;
-    top:-2%;
+    top:-2%; 
     background-image:url("imagens/fundo.jpg");
     background-size:25% 50%;
     transform:rotate(0.6deg);
@@ -27,7 +27,7 @@
   }
   .barraDeOpcoes{
     position: absolute;
-    height:9%; 
+    height:11%; 
     width:99.7%;
     left:0%;
     top:90%;
@@ -85,11 +85,11 @@
   transform-origin:top bottom;}
   #topo{
     position:fixed;
-    width:5%;
-    height:3%;
-    right:4% ;
+    width:17%;
+    height:4%;
+    right:6% ;
     bottom:5%;
-    color:rgba(28, 138, 43, 0.452) ;
+    color:rgb(28, 138, 43) ;
     background-color: rgba(20, 20, 20, 0.466);
     border: 1px rgba(28, 138, 43, 0.452) outset;
   }
@@ -132,24 +132,27 @@
     height:35%; 
     width: 100%;
     left: 0px;
-    top:0px ; 
+    top:1px ; 
     text-align: center;
     display:flex;
     flex-direction: column-reverse;
     flex-wrap: nowrap;
     align-items: stretch;
     background-image:  linear-gradient(137deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.9752275910364145) 35%, rgba(37,68,22,0.896796218487395) 100%);
-    border: 1px rgb(1, 19, 5) solid;
+    border: 2px rgb(1, 19, 5) solid;
     border-radius: 5%;
     color: aliceblue;
     font-size:15px;
+  }
+  .butoesPrincipais:hover{
+    background-image:  linear-gradient(137deg, rgba(37,68,22,0.896796218487395) 0%,rgb(58, 123, 25) 35%, rgba(37,68,22,0.896796218487395) 100%);
   }
   .blocoPublico{
     position: absolute;
     min-height:50px;
     max-height:4000px; 
     width:95%;
-    top:100% ; 
+    top:105% ; 
     left:2.5%;
    background: transparent;
     border: 3px rgb(3, 54, 9) solid;
