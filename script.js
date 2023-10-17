@@ -1,3 +1,6 @@
+document.addEventListener("keydown", function (e) {
+  if ((e.ctrlKey && e.key === "u") || (e.ctrlKey && e.key === "c")) {
+    e.preventDefault();  }});
 const repositoriosS=[];
 const imaaaage=["imagemm1","imagemm2","imagemm3","imagemm4"];
 const githubUsername = 'Mateus10982';
