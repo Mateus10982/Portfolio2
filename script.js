@@ -1,4 +1,3 @@
-//https://portfolio-xi-lovat-34.vercel.app/
 const repositoriosS=[];
 const imaaaage=["imagemm1","imagemm2","imagemm3","imagemm4"];
 const githubUsername = 'Mateus10982';
@@ -25,7 +24,8 @@ buttonExperiencia.addEventListener("click",function(){tipobutton ="Experiencia";
 buttonHabilidades.addEventListener("click",function(){tipobutton ="Habilidades"; divpequena(tipobutton) });
 buttonProjetosP.addEventListener("click",function(){tipobutton ="ProjetosP"; divpequena(tipobutton) });
 contato.addEventListener("click",function(){tipobutton ="contato"; divpequena(tipobutton) });
-textMenuFlutuando.addEventListener("mouseleave", oculltar )
+textMenuFlutuando.addEventListener("mouseleave", oculltar );
+textMenuFlutuando.addEventListener("touchleave", oculltar );
 SobreMim.addEventListener("click",function(){tipobutton ="SobreMim"; divpequena(tipobutton) });
 function oculltar(){
     textMenuFlutuando.style.display="none";
@@ -39,6 +39,13 @@ barradeop.addEventListener("mouseover",  async function(){
     Habilidades.style.display="none";
     ProjetosP.style.display="none";
 });
+barradeop.addEventListener("touchstart",  async function(){
+    textMenuFlutuando.style.display="none";
+    await delay(1500);
+       Experiencia.style.display="none";
+       Habilidades.style.display="none";
+       ProjetosP.style.display="none";
+   });
 var tyy=true;
 function divpequena(tipobutton){
 switch(tipobutton){
@@ -70,14 +77,14 @@ Experiencia.style.display="none";}
         textMenuFlutuando.style.height="25%";
         textMenuFlutuando.style.top="57%";
         textMenuFlutuando.innerHTML=``;
-        textMenuFlutuando.innerHTML=`&nbsp;<p class="p11"> Resido em Belo Horizonte, Minas Gerais, no bairro Vera Cruz. Atualmente, tenho ${ano-2004} anos de idade e possuo habilidades sólidas <br> em lógica de programação e tenho facilidade em aprender as bases de novas linguagens de programação.</p>`;
+        textMenuFlutuando.innerHTML=`&nbsp;<p class="p11"> Resido em Belo Horizonte, Minas Gerais, no bairro Vera Cruz. Atualmente, tenho ${ano-2004} anos de idade e possuo habilidades sólidas  em lógica de programação e tenho facilidade em aprender as bases de novas linguagens de programação.</p>`;
        break;
     case "contato":
         textMenuFlutuando.style.display="block";
         textMenuFlutuando.style.height="29%";
         textMenuFlutuando.style.top="53%";
         textMenuFlutuando.innerHTML=``;
-textMenuFlutuando.innerHTML=`<p class="p11">  Link para o meu         Linkedin:<a href="https://www.linkedin.com/in/mateus-silva-252683281"> 
+textMenuFlutuando.innerHTML=`<p class="p131">  Link para o meu         Linkedin:<a href="https://www.linkedin.com/in/mateus-silva-252683281"> 
         @Mateus-Silva</a><br><br> Telefone: (31) 98448-2078 </p>`;
        break;
 }
@@ -98,6 +105,10 @@ function reformular(repositoriosS){
     immm.style.display="none";
 });
 divv.addEventListener("mouseleave", function(){
+    let immm=document.querySelector(`#d${j} .imaaaage`);
+immm.style.display="block";
+});
+divv.addEventListener("touchleave", function(){
     let immm=document.querySelector(`#d${j} .imaaaage`);
 immm.style.display="block";
 });
