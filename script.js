@@ -3,7 +3,7 @@ document.addEventListener("keydown", function (e) {
     if ((e.ctrlKey && e.key === "u") || (e.ctrlKey && e.key === "c")) {
       e.preventDefault();  }});
 const repositoriosS=[];
-//const imaaaage=["imagemm1","imagemm2","imagemm3","imagemm4","imagemm5","imagemm6","imagemm7","imagemm8","imagemm9","imagemm10","imagemm11","imagemm12","imagemm13","imagemm14","imagemm15","imagemm16","imagemm17","imagemm18","imagemm19","imagemm20"];
+const imaaaage=["imagemm1","imagemm2","imagemm3","imagemm4","imagemm5","imagemm6","imagemm7","imagemm8","imagemm9","imagemm10","imagemm11","imagemm12","imagemm13","imagemm14","imagemm15","imagemm16","imagemm17","imagemm18","imagemm19","imagemm20"];
 const githubUsername = 'Mateus10982';
 const gitUrl = `https://api.github.com/users/${githubUsername}/repos`;
 
@@ -99,13 +99,11 @@ function reformular(repositoriosS){
         divv.id=`d${j}`;
         divv.className='proj';
         ProjetosP.appendChild(divv);
-        let ifm=document.createElement('iframe');
-        ifm.id=`im${j}`;
-        ifm.className='imaaaage';
-        ifm.backgroud='white';
-        ifm.src=`${repositoriosS[j].Link}`;
-        ifm.sandbox='allow-same-origin allow-scripts';
-        divv.appendChild(ifm);
+        let imm=document.createElement('img');
+        imm.id=`im${j}`;
+        imm.className='imaaaage';
+        imm.src=`imagens/${imaaaage[repositoriosS[j].topicss]}.jpg`;
+        divv.appendChild(imm);
         divv.addEventListener("click", function(){
             let immm=document.querySelector(`#d${j} .imaaaage`);
     immm.style.display="none";
@@ -128,7 +126,10 @@ function repo(githubUsername,gitUrl){
         projetoRepositorio.Descrição= repository.description;
         projetoRepositorio.Link= repository.homepage;
         projetoRepositorio.topicss=repository.topics[0];
+       console.log(repository);
+       console.log(projetoRepositorio.topicss);
        repositoriosS.push(projetoRepositorio);
+       console.log(projetoRepositorio);
      });
    });
 }
