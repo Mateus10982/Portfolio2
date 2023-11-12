@@ -176,7 +176,7 @@ color: aliceblue;
 .imaaaage{
   position: absolute;
   height:100%;
-  width:100%;
+  width:100vh;
   left:0%;
   top:0%;
   display: block;
