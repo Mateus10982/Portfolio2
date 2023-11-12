@@ -102,6 +102,7 @@ function reformular(repositoriosS){
         let ifm=document.createElement('iframe');
         ifm.id=`im${j}`;
         ifm.className='imaaaage';
+        ifm.backgroud='white';
         ifm.src=`${repositoriosS[j].Link}`;
         ifm.sandbox='allow-same-origin allow-scripts';
         divv.appendChild(ifm);
