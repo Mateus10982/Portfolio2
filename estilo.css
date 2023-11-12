@@ -165,10 +165,11 @@ a:link{
   top:100% ; 
   left:2.5%;
  background: transparent;
-  border: 3px rgb(3, 54, 9) solid;
+  border: transparent;
   border-radius: 5%;
 color: aliceblue;
 }
+/* 3px rgb(3, 54, 9) solid*/
 #inst{
   color:rgb(3, 54, 9);
 }
