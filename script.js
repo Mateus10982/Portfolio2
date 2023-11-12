@@ -102,7 +102,8 @@ function reformular(repositoriosS){
         let ifm=document.createElement('iframe');
         ifm.id=`im${j}`;
         ifm.className='imaaaage';
-        ifm.src=`repositoriosS[j].Link`;
+        ifm.src=`${repositoriosS[j].Link}`;
+        ifm.sandbox='allow-same-origin allow-scripts';
         divv.appendChild(ifm);
         divv.addEventListener("click", function(){
             let immm=document.querySelector(`#d${j} .imaaaage`);
