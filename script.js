@@ -102,7 +102,7 @@ function reformular(repositoriosS){
         let imm=document.createElement('img');
         imm.id=`im${j}`;
         imm.className='imaaaage';
-        imm.src=`imagens/${imaaaage[repositoriosS[j-1].topicss]}.jpg`;
+        imm.src=`imagens/${imaaaage[repositoriosS[j].topicss]}.jpg`;
         divv.appendChild(imm);
         divv.addEventListener("click", function(){
             let immm=document.querySelector(`#d${j} .imaaaage`);
