@@ -94,7 +94,7 @@ textMenuFlutuando.innerHTML=`<p class="p131">  Link para o meu         Linkedin:
 }
 }
 function reformular(repositoriosS){
-    for(let j=0 ;j <= repositoriosS.length; ++j){
+    for(let j=0 ;j < repositoriosS.length; ++j){
         let divv=document.createElement('div');
         divv.id=`d${j}`;
         divv.className='proj';
@@ -102,7 +102,7 @@ function reformular(repositoriosS){
         let imm=document.createElement('img');
         imm.id=`im${j}`;
         imm.className='imaaaage';
-        imm.src=`imagens/${imaaaage[repositoriosS[j].topicss]}.jpg`;
+        imm.src=`imagens/${imaaaage[repositoriosS[j-1].topicss]}.jpg`;
         divv.appendChild(imm);
         divv.addEventListener("click", function(){
             let immm=document.querySelector(`#d${j} .imaaaage`);
