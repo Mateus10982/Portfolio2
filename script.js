@@ -94,7 +94,7 @@ textMenuFlutuando.innerHTML=`<p class="p131">  Link para o meu         Linkedin:
 }
 }
 function reformular(repositoriosS){
-    for(let j=0 ;j < repositoriosS.length; ++j){
+    for(let j=0 ;j <= repositoriosS.length; ++j){
         let divv=document.createElement('div');
         divv.id=`d${j}`;
         divv.className='proj';
